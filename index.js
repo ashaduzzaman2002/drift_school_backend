@@ -12,7 +12,7 @@ const socialRouter = require('./routes/social');
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors())
+app.use(cors(origin: 'https://agumentik-test.netlify.app/'))
 
 app.use('/api/user', userRouter);
 app.use('/api/lead', leadRouter);
